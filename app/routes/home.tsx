@@ -1,13 +1,13 @@
 import type { Route } from "./+types/home";
-import { Welcome } from "../welcome/welcome";
+import { LandingPage } from "~/modules/LandingModule";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
+    { title: "SekitarKita - Direktori UMKM | Sekitar Telkom University" },
+    { name: "description", content: "Website Direktori UMKM di Sekitar Telkom University" },
   ];
 }
 
 export default function Home() {
-  return <Welcome />;
+  return <LandingPage />;
 }
