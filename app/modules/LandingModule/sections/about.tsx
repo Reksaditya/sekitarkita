@@ -1,11 +1,9 @@
-export const About = () => {
+import { Title } from "~/components/ui/title"
+
+export const AboutSection = () => {
   return (
-    <section className="flex flex-col items-center justify-center gap-10 pt-10 pb-20">
-      <div className="flex items-center justify-center w-full my-8">
-        <div className="grow h-2 bg-primary green-300 max-w-96 rounded-full" />
-        <h2 className="mx-4 text-6xl font-bold italic">About us</h2>
-        <div className="grow h-2 bg-primary max-w-96 rounded-full" />
-      </div>
+    <section className="flex flex-col items-center justify-center gap-10 py-10">
+      <Title title="Tentang Kami" />
       <div className="relative h-150 w-full overflow-hidden">
         <div className="absolute inset-0 bg-black/50 z-10"></div>
         <img src="/public/background.webp" alt="background" className="object-cover" />

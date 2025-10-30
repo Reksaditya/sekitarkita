@@ -23,9 +23,9 @@ export const Navbar = () => {
       <Input className={`max-w-2xl backdrop-blur-lg ${isScrolled ? 'text-foreground' : 'text-white bg-black/10 border-2 border-white/20'}`} />
       <nav className={`relative z-20 h-11 w-fit px-5 py-2 rounded-full backdrop-blur-lg ${isScrolled ? 'text-foreground' : 'text-white bg-black/10 border-2 border-white/20'}`}>
         <ul className="list-none flex gap-5">
-          <li className="hover:cursor-pointer">Home</li>
+          <li className="hover:cursor-pointer">Beranda</li>
           <li className="hover:cursor-pointer">List UMKM</li>
-          <li className="hover:cursor-pointer">Contact Us</li>
+          <li className="hover:cursor-pointer">Kontak Kami</li>
         </ul>
       </nav>
     </div>

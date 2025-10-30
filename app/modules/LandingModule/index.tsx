@@ -1,8 +1,8 @@
 import { HeroSection } from "./sections/hero"
 import { PreviewSection } from "./sections/preview"
 import { Navbar } from "~/components/ui/navbar"
-import { Loading } from "~/components/ui/loading"
-import { About } from "./sections/about"
+import { AboutSection } from "./sections/about"
+import { ServiceSection } from "./sections/service"
 
 export const LandingPage = () => {
   return (
@@ -10,7 +10,8 @@ export const LandingPage = () => {
       <Navbar />
       <HeroSection />
       <PreviewSection />
-      <About />
+      <AboutSection />
+      <ServiceSection />
     </div>
   )
 }
