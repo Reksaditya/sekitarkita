@@ -27,7 +27,7 @@ const serviceItems: serviceProps[] = [
 export const ServiceSection = () => {
   return (
     <section className="px-20 flex flex-col gap-10 py-20">
-      <Title title="Service" />
+      <Title title="Layanan Kami" />
       <div
 
         className="w-full flex justify-between items-center"
@@ -40,7 +40,7 @@ export const ServiceSection = () => {
             >
               <img src={`/public/${item.image}.png`} alt={item.image} />
               <h2 className="font-semibold">{item.title}</h2>
-              <p>{item.desc}</p>
+              <p className="">{item.desc}</p>
             </div>
         )
       })}

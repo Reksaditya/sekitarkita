@@ -31,10 +31,10 @@ export const HeroSection = () => {
           <Button
             variant={'ghost'}
             size={'xl'}
-            className="px-5 hover:scale-105 active:scale-100"
+            className="px-5 hover:scale-105 hover:text-secondary active:scale-100 font-semibold"
           >
             <span
-              className="flex items-center bg-primary rounded-full w-5 h-5 justify-center"
+              className="flex items-center bg-primary rounded-full w-7 h-7 justify-center text-secondary text-xl text-center"
             >
               &darr;
             </span>

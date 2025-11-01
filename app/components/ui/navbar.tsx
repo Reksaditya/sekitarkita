@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import { Input } from "./input"
+import { Link } from "react-router"
 
 export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -24,7 +25,9 @@ export const Navbar = () => {
       <nav className={`relative z-20 h-11 w-fit px-5 py-2 rounded-full backdrop-blur-lg ${isScrolled ? 'text-foreground' : 'text-white bg-black/10 border-2 border-white/20'}`}>
         <ul className="list-none flex gap-5">
           <li className="hover:cursor-pointer">Beranda</li>
-          <li className="hover:cursor-pointer">List UMKM</li>
+          <Link to={"/product"}>
+            <li className="hover:cursor-pointer">List UMKM</li>
+          </Link>
           <li className="hover:cursor-pointer">Kontak Kami</li>
         </ul>
       </nav>

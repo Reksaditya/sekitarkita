@@ -54,7 +54,7 @@ export const PreviewSection = () => {
                       <h1 className="font-bold text-9xl">{item.title}</h1>
                       <h2 className="max-w-130 text-justify ml-3">{item.desc}</h2>
                     </div>
-                    <Button variant={'black'} size={'xl'} className="w-72">Cek Disini!</Button>
+                    <Button variant={'secondary'} size={'xl'} className="w-72 text-primary font-semibold">Cek Disini!</Button>
                   </div>
                   <div>
                     <img src={item.image} alt="Ayam Geprek" width={700} className="absolute -right-10 -top-1 z-20" />
