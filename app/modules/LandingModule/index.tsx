@@ -5,6 +5,7 @@ import { AboutSection } from "./sections/about"
 import { ServiceSection } from "./sections/service"
 import { CategoriesSection } from "./sections/categories"
 import { Footer } from "~/components/ui/footer"
+import { Contact } from "./sections/contactus"
 
 export const LandingPage = () => {
   return (
@@ -15,6 +16,7 @@ export const LandingPage = () => {
       <AboutSection />
       <ServiceSection />
       <CategoriesSection />
+      <Contact />
       <Footer />
     </div>
   )
