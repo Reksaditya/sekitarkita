@@ -5,7 +5,7 @@ import { Title } from "~/components/ui/title"
 
 export const Contact = () => {
   return (
-    <section className="flex flex-col items-center px-20 py-10 gap-10">
+    <section className="flex flex-col items-center px-20 py-10 gap-10" id="contact">
       <div className="w-full flex flex-col items-center">
         <Title title="Kontak Kami" />
         <h3 className="text-lg text-gray-600 font-semibold">Ada saran atau masukkan? Silahkan isi form di bawah!</h3>

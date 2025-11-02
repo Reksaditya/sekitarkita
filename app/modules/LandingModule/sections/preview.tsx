@@ -30,7 +30,7 @@ const previewItem: preview[] = [
 
 export const PreviewSection = () => {
   const plugin = useRef(
-    Autoplay({ delay: 500, stopOnInteraction: true })
+    Autoplay({ delay: 2000, stopOnInteraction: true })
   )
 
   return (
