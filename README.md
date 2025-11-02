@@ -1,87 +1,51 @@
-# Welcome to React Router!
+# Sekitar Kita Website
 
-A modern, production-ready template for building full-stack React applications using React Router.
+Sekitar Kita adalah website yang berisi direktori UMKM yang ada di sekitar lingkungan Telkom University. Website ini memuat informasi jam operasional suatu UMKM hingga detail informasi-nya.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+## Tech Stack
+<div className="flex flex-col items-center gap-5">
+  <div className="flex flex-col items-center">
+    <img src="https://reactrouter.com/_brand/React%20Router%20Brand%20Assets/React%20Router%20Logo/Dark.svg" width="20" />
+    <span className="text-white">React Router</span>
+  </div>
+  <div className="flex flex-col items-center">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png" width="20">
+    <span className="text-white">React</span>
+  </div>
+  <div className="flex flex-col items-center">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2560px-Tailwind_CSS_Logo.svg.png" width="20">
+    <span className="text-white">TailwindCSS</span>
+  </div>
+  <div className="flex flex-col items-center">
+    <img src="https://images.seeklogo.com/logo-png/51/2/shadcn-ui-logo-png_seeklogo-519786.png" width="20">
+    <span className="text-white">Shadcn UI</span>
+  </div>
+  <div className="flex flex-col items-center">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/2048px-Typescript_logo_2020.svg.png" width="20">
+    <span className="text-white">TypeScript</span>
+  </div>
+</div>
 
-## Features
+## How to Run
+Clone the repository  
+``` 
+  git clone https://github.com/Reksaditya/sekitarkita.git 
+```  
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
-
-## Getting Started
-
-### Installation
-
-Install the dependencies:
-
-```bash
-npm install
+Call directory using cd (if cloning from terminal)
+``` 
+  cd sekitarkita
 ```
 
-### Development
-
-Start the development server with HMR:
-
-```bash
-npm run dev
+Install dependencies
+```
+  bun install
 ```
 
-Your application will be available at `http://localhost:5173`.
-
-## Building for Production
-
-Create a production build:
-
-```bash
-npm run build
+Run the projects
+```
+  bun dev
 ```
 
-## Deployment
-
-### Docker Deployment
-
-To build and run using Docker:
-
-```bash
-docker build -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
-```
-
-The containerized application can be deployed to any platform that supports Docker, including:
-
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
-
----
-
-Built with ❤️ using React Router.
+## Our Progress
+Untuk saat ini, kami telah selesai hingga halaman direktori UMKM dan sedang mengembangkan halaman detail produk. Selain itu, kami juga akan menambahkan variasi UMKM yang ada lebih banyak lagi dan juga akan menambah detail-detail dan sistem otomatis yang menunjukkan status apakah UMKM yang di tampilkan buka atau tutup sesuai jam operasionalnya. 
