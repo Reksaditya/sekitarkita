@@ -1,7 +1,12 @@
+import { useNavigate } from "react-router"
+import { Badge } from "~/components/ui/badge"
+import { Button } from "~/components/ui/button"
 import { Title } from "~/components/ui/title"
 import { Recomendation } from "~/modules/ProductModule/data/productData"
 
 export const CategoriesSection = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="px-20 flex flex-col gap-10 py-10">
       <Title title="Kategori UMKM" />
@@ -23,12 +28,27 @@ export const CategoriesSection = () => {
       </div>
       <div className="flex flex-col gap-10">
         <h3 className="font-semibold text-3xl">Rekomendasi dari Kami</h3>
-        <div className="flex justify-between">
+        <div className="grid grid-cols-4 gap-10 flex">
           {Recomendation.map((item) => {
             return (
-              <div className="flex flex-col justify-center items-center bg-white shadow-xl w-80 h-80 rounded-xl">
-                <img src={item.image} alt={item.name} width={200} />
-                <h3>{item.name}</h3>
+              <div
+                key={item.id}
+                className="flex flex-col shadow-lg rounded-xl items-center overflow-hidden"
+              >
+                <img src={item.image} alt={item.name} width={400} className="rounded-xl" />
+                <div className="flex flex-col items-start w-full gap-5 p-5">
+                  <div>
+                    <h3 className="font-semibold">{item.name}</h3>
+                    <h4 className="text-gray-700">{item.operation}</h4>
+                    <Badge>{item.status}</Badge>
+                  </div>
+                  <Button variant={"outline"} className="text-primary font-bold w-full" onClick={() => {
+                    navigate(`/${item.id.toString()}`);
+                  }}
+                  >
+                    Lihat Selengkapnya
+                  </Button>
+                </div>
               </div>
             )
           })}

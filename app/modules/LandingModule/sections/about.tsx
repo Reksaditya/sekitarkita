@@ -2,7 +2,7 @@ import { Title } from "~/components/ui/title"
 
 export const AboutSection = () => {
   return (
-    <section className="flex flex-col items-center justify-center gap-10 py-10">
+    <section className="flex flex-col items-center justify-center gap-10 pb-10 pt-20">
       <Title title="Tentang Kami" />
       <div className="relative h-150 w-full overflow-hidden">
         <div className="absolute inset-0 bg-black/50 z-10"></div>

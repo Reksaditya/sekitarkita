@@ -3,7 +3,7 @@ import { Button } from "./button"
 
 export const Footer = () => {
   return (
-    <footer className="bg-primary text-white border-t-10 border-secondary">
+    <footer className="bg-primary text-white border-t-10 border-secondary w-full">
       <div className="flex justify-between px-20 pt-10">
         <div className="flex flex-col gap-10">
           <div className="flex flex-col gap-5">

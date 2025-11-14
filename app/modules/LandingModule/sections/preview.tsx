@@ -8,6 +8,7 @@ interface preview {
   desc: string,
   image: string,
   link: string,
+  width: number,
   style: string
 }
 
@@ -17,6 +18,7 @@ const previewItem: preview[] = [
     desc: 'Makanan bukan sekadar pengisi perut, tapi juga pengikat kebersamaan. Kami percaya, setiap hidangan yang dimasak dengan hati bisa menghadirkan senyum di meja makan.',
     image: '/public/ayamgeprek.png',
     link: '',
+    width: 700,
     style: "rounded-full w-170 h-170 -right-10 top-0 bg-black/50"
   },
   {
@@ -24,6 +26,7 @@ const previewItem: preview[] = [
     desc: 'Pakaian bersih itu bukan sekadar kebutuhan, tapi juga kenyamanan. Disini kami mencuci setiap helai pakaian Anda dengan perhatian, menjaga warna tetap cerah dan kain tetap lembut.',
     image: '/public/mesincuci.png',
     link: '',
+    width: 680,
     style: "w-150 h-150 top-14 bg-black/20"
   },
 ]
@@ -57,7 +60,7 @@ export const PreviewSection = () => {
                     <Button variant={'secondary'} size={'xl'} className="w-72 text-primary font-semibold">Cek Disini!</Button>
                   </div>
                   <div>
-                    <img src={item.image} alt="Ayam Geprek" width={700} className="absolute -right-10 -top-1 z-20" />
+                    <img src={item.image} alt="Ayam Geprek" width={item.width} className="absolute -right-10 -top-5 z-20" />
                     <div className={`absolute z-10 blur-lg rotate-12 ${item.style}`}>a</div>
                   </div>
                 </div>

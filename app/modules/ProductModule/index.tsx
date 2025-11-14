@@ -1,5 +1,5 @@
 import { Navbar } from "~/components/ui/navbar"
-import { ProductSection } from "./section/productPage"
+import { ProductSection } from "./productPage"
 import { Footer } from "~/components/ui/footer"
 
 export const ProductPage = () => {

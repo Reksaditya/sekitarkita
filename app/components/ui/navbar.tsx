@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { Input } from "./input"
-import { Link, useLocation, useNavigate } from "react-router"
+import { Link, useLocation, useNavigate } from "react-router-dom"
 import { scroller } from "react-scroll"
 
 export const Navbar = () => {
