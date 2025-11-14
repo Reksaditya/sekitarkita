@@ -1,7 +1,8 @@
 interface menu {
   image: string,
   name: string,
-  price: number
+  price: number,
+  price2?: number
 }
 
 interface documentation {
@@ -21,7 +22,7 @@ export interface products {
   contact?: string,
   contactLink?: string,
   instagram?: string,
-  insatgramLink?: string,
+  instagramLink?: string,
   menu?: menu[]
   doc?: documentation[]
 
@@ -40,7 +41,7 @@ const productData:products[] = [
     contact: "087765078240",
     contactLink: "https://wa.me/6287765078240",
     instagram: "@terserah.tel.u",
-    insatgramLink: "https://www.instagram.com/terserah.tel.u/",
+    instagramLink: "https://www.instagram.com/terserah.tel.u/",
     menu: [
       {
         image: "/public/menu/ayamgeprek.jpg",
@@ -97,8 +98,12 @@ const productData:products[] = [
         desc: "Foto Lokasi Angkringan Terserah 3"
       },
       {
-        image: "/public/doc/terserah4.jpg",
+        image: "/public/doc/terserah5.jpg",
         desc: "Foto Lokasi Angkringan Terserah 4"
+      },
+      {
+        image: "/public/doc/terserah4.jpg",
+        desc: "Foto Lokasi Angkringan Terserah 5"
       },
     ]
   },
@@ -114,8 +119,98 @@ const productData:products[] = [
     contact: "081297053599",
     contactLink: "https://wa.me/6281297053599",
     instagram: "@pipindonuts",
-    insatgramLink: "https://www.instagram.com/pipindonuts/"
-    
+    instagramLink: "https://www.instagram.com/pipindonuts/",
+    menu: [
+      {
+        image: "/public/menu/palmsugar.jpg",
+        name: "Palm Sugar Donut",
+        price: 5000
+      },
+      {
+        image: "/public/menu/dancow.jpg",
+        name: "Dancow Donut",
+        price: 5000
+      },
+      {
+        image: "/public/menu/milo.jpg",
+        name: "Chocolate Milo Donut",
+        price: 5000
+      },
+      {
+        image: "/public/menu/cheesy.jpg",
+        name: "Milky Cheese Donut",
+        price: 5000
+      },
+      {
+        image: "/public/menu/tiramisu.jpg",
+        name: "Tiramisu Chocolate Donut",
+        price: 5000
+      },
+      {
+        image: "/public/menu/strawberry.jpg",
+        name: "Strawberry Rainbow Donut",
+        price: 5000
+      },
+      {
+        image: "/public/menu/milky.jpg",
+        name: "Milky Rainbow Donut",
+        price: 5000
+      },
+      {
+        image: "/public/menu/almond.jpg",
+        name: "Milky Almond Donut",
+        price: 5000
+      },
+      {
+        image: "/public/menu/cappucino.jpg",
+        name: "Cappucino Donut",
+        price: 5000
+      },
+      {
+        image: "/public/menu/redvelvet.jpg",
+        name: "Red Velvet Donut",
+        price: 5000
+      },
+      {
+        image: "/public/menu/taro.jpg",
+        name: "Taro Sprinkles Donut",
+        price: 5000
+      },
+      {
+        image: "/public/menu/matcha.jpg",
+        name: "Matcha Donut",
+        price: 5000
+      },
+      {
+        image: "/public/menu/avocado.jpg",
+        name: "Avocado Chocolate Donut",
+        price: 5000
+      },
+      {
+        image: "/public/menu/avocadomeses.jpg",
+        name: "Avocado Meses Donut",
+        price: 5000
+      },
+      {
+        image: "/public/menu/cocopandan.jpg",
+        name: "Cocopandan Donut",
+        price: 5000
+      },
+    ],
+    doc: [
+      {
+        image: "/public/doc/pipin1.png",
+        desc: "Foto Lokasi Pipin Donut 1"
+      },
+      {
+        image: "/public/doc/pipin2.png",
+        desc: "Foto Lokasi Pipin Donut 2"
+      },
+      {
+        image: "/public/doc/pipin3.png",
+        desc: "Foto Lokasi Pipin Donut 3"
+      }
+    ]
   },
   {
     id: 3,
@@ -126,6 +221,70 @@ const productData:products[] = [
     status: "Open",
     map: "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d247.51954383577433!2d107.63322837479932!3d-6.972386299999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwNTgnMjAuNiJTIDEwN8KwMzgnMDAuNyJF!5e0!3m2!1sid!2sid!4v1763051059326!5m2!1sid!2sid",
     stars: 5,
+    contact: "085175100960",
+    contactLink: "https://wa.me/6285175100960",
+    instagram: "@dcelupchickencrispy_stttelkom",
+    instagramLink: "https://www.instagram.com/dcelupchickencrispy_stttelkom/",
+    menu: [
+      {
+        image: "/public/menu/ayamoriginal.jpg",
+        name: "Ayam Original (Tanpa Nasi)",
+        price: 8000
+      },
+      {
+        image: "/public/menu/geprekdcelup.jpg",
+        name: "Ayam Geprek (Tanpa Nasi)",
+        price: 10000
+      },
+      {
+        image: "/public/menu/chilioil.jpg",
+        name: "Ayam Chili Oil (Tanpa Nasi)",
+        price: 10000
+      },
+      {
+        image: "/public/menu/sausdcelup.jpg",
+        name: "Ayam Saus D'Celup (Tanpa Nasi)",
+        price: 12000
+      },
+      {
+        image: "/public/menu/ayamoriginal.jpg",
+        name: "Paket Ayam Original",
+        price: 12000
+      },
+      {
+        image: "/public/menu/geprekdcelup.jpg",
+        name: "Paket Ayam Geprek",
+        price: 14000
+      },
+      {
+        image: "/public/menu/chilioil.jpg",
+        name: "Paket Ayam Chili Oil",
+        price: 14000
+      },
+      {
+        image: "/public/menu/sausdcelup.jpg",
+        name: "Paket Ayam Saus D'Celup",
+        price: 16000
+      },
+    ],
+    doc: [
+      {
+        image: "/public/doc/dcelup1.jpg",
+        desc: "Foto Lokasi D'Celup Chicken Crispy 1"
+      },
+      {
+        image: "/public/doc/dcelup2.jpg",
+        desc: "Foto Lokasi D'Celup Chicken Crispy 2"
+      },
+      {
+        image: "/public/doc/dcelup3.jpg",
+        desc: "Foto Lokasi D'Celup Chicken Crispy 3"
+      },
+      {
+        image: "/public/doc/dcelup4.jpg",
+        desc: "Foto Lokasi D'Celup Chicken Crispy 4"
+      }
+    ]
   },
   {
     id: 4,
@@ -136,6 +295,80 @@ const productData:products[] = [
     status: "Open",
     map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1111.3366433457431!2d107.63443969818807!3d-6.9675570670161395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e963d118bf0b%3A0x3215f8c661084660!2sWarung%20Nasi%20Kuning%20Adhyaksa!5e0!3m2!1sid!2sid!4v1763050713454!5m2!1sid!2sid",
     stars: 5,
+    contact: "088901687578",
+    contactLink: "https://wa.me/6288901687578",
+    menu: [
+      {
+        image: "/public/menu/coklatsusu.jpg",
+        name: "Roti Bakar Coklat Susu",
+        price: 5000,
+        price2: 15000
+      },
+      {
+        image: "/public/menu/strawberrysusu.jpg",
+        name: "Roti Bakar Strawberry Susu",
+        price: 5000,
+        price2: 15000
+      },
+      {
+        image: "/public/menu/kacangsusu.jpg",
+        name: "Roti Bakar Kacang Susu",
+        price: 5000,
+        price2: 15000
+      },
+      {
+        image: "/public/menu/blueberrysusu.jpg",
+        name: "Roti Bakar Blueberry Susu",
+        price: 5000,
+        price2: 15000
+      },
+      {
+        image: "/public/menu/vanillasusu.jpg",
+        name: "Roti Bakar Vanilla Susu",
+        price: 5000,
+        price2: 15000
+      },
+      {
+        image: "/public/menu/nanassusu.jpg",
+        name: "Roti Bakar Nanas Susu",
+        price: 5000,
+        price2: 15000
+      },
+      {
+        image: "/public/menu/oreosusu.jpg",
+        name: "Roti Bakar Oreo Susu",
+        price: 5000,
+        price2: 15000
+      },
+      {
+        image: "/public/menu/strawberrycoklat.jpg",
+        name: "Roti Bakar Semua Rasa + Coklat",
+        price: 6000,
+        price2: 17000
+      },
+    ],
+    doc: [
+      {
+        image: "/public/doc/adhyaksa1.png",
+        desc: "Foto Lokasi Warung Roti & Makanan Adhyaksa 1"
+      },
+      {
+        image: "/public/doc/adhyaksa2.png",
+        desc: "Foto Lokasi Warung Roti & Makanan Adhyaksa 2"
+      },
+      {
+        image: "/public/doc/adhyaksa3.png",
+        desc: "Foto Lokasi Warung Roti & Makanan Adhyaksa 3"
+      },
+      {
+        image: "/public/doc/adhyaksa4.png",
+        desc: "Foto Lokasi Warung Roti & Makanan Adhyaksa 4"
+      },
+      {
+        image: "/public/doc/adhyaksa5.png",
+        desc: "Foto Lokasi Warung Roti & Makanan Adhyaksa 5"
+      }
+    ]
   },
   {
     id: 5,
@@ -144,8 +377,52 @@ const productData:products[] = [
     image: "/public/kucika.png",
     operation: "09.00 - 21.00",
     status: "Open",
-    map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.290464925151!2d107.63023797524725!3d-6.975016368300215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e9ae22c0f675%3A0x9f9e04069ef99df4!2sTerserah!5e0!3m2!1sid!2sid!4v1763049045503!5m2!1sid!2sid",
+    map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d990.0755403389729!2d107.6324835695803!3d-6.973633068380469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e9adfe252db7%3A0x44f819052f720b00!2sJl.%20Telekomunikasi%20No.66%2C%20Sukapura%2C%20Kec.%20Dayeuhkolot%2C%20Kabupaten%20Bandung%2C%20Jawa%20Barat%2040257!5e0!3m2!1sid!2sid!4v1763150617319!5m2!1sid!2sid",
     stars: 5,
+    contact: "0882001319755",
+    contactLink: "https://wa.me/62882001319755",
+    menu: [
+      {
+        image: "/public/menu/mieayam.jpg",
+        name: "Mie Ayam",
+        price: 10000
+      },
+      {
+        image: "/public/menu/mieyamin.jpg",
+        name: "Mie Yamin",
+        price: 10000
+      },
+      {
+        image: "/public/menu/mieayam.jpg",
+        name: "Mie Ayam/Yamin Double ",
+        price: 15000
+      },
+      {
+        image: "/public/menu/cekerayam.jpg",
+        name: "Ceker Ayam (2 pcs)",
+        price: 5000
+      },
+      {
+        image: "/public/menu/baso.jpg",
+        name: "Baso (2 pcs)",
+        price: 5000
+      },
+      {
+        image: "/public/menu/pangsit.jpg",
+        name: "Pangsit Chili Oil",
+        price: 10000
+      },
+    ],
+    doc: [
+      {
+        image: "/public/doc/kucika1.png",
+        desc: "Foto Lokasi Dapoer Kucika 1"
+      },
+      {
+        image: "/public/doc/kucika2.png",
+        desc: "Foto Lokasi Dapoer Kucika 2" 
+      }
+    ]
   },
   {
     id: 6,
@@ -156,6 +433,19 @@ const productData:products[] = [
     status: "Open",
     map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.52010820110297!2d107.62894659291574!3d-6.971317991852266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e9002d5a6f4b%3A0x2245ff865645eb6f!2sStreet%20Food!5e0!3m2!1sid!2sid!4v1763051738891!5m2!1sid!2sid",
     stars: 5,
+    menu: [
+      
+    ],
+    doc: [
+      {
+        image: "/public/doc/kadet1.jpg",
+        desc: "Foto Lokasi Roti Kukus Thailand 1"
+      },
+      {
+        image: "/public/doc/kadet2.jpg",
+        desc: "Foto Lokasi Roti Kukus Thailand 2"
+      }
+    ]
   },
   {
     id: 7,
@@ -164,8 +454,35 @@ const productData:products[] = [
     image: "/public/ayulaundry.png",
     operation: "07.00 - 23.00",
     status: "Open",
-    map: "https://maps.app.goo.gl/EcB5tyd8c5ZaSRS46",
+    map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.52015031582775!2d107.63350413824718!3d-6.971238264789519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e9b28067e595%3A0x685b089f34c91415!2sJl.%20Mangga%20Dua%20No.73%2C%20Sukapura%2C%20Kec.%20Dayeuhkolot%2C%20Kabupaten%20Bandung%2C%20Jawa%20Barat%2040267!5e0!3m2!1sid!2sid!4v1763152737305!5m2!1sid!2sid",
     stars: 5,
+    contact: "082121425152",
+    contactLink: "https://wa.me/6282121425152",
+    menu: [
+      {
+        image: "/public/menu/cucibersih.jpg",
+        name: "Laundry Kiloan",
+        price: 7000
+      }
+    ],
+    doc: [
+      {
+        image: "/public/doc/ayulaundry.png",
+        desc: "Foto Lokasi Rumah Ayu Laundry 1"
+      },
+      {
+        image: "/public/doc/ayulaundry2.png",
+        desc: "Foto Lokasi Rumah Ayu Laundry 2"
+      },
+      {
+        image: "/public/doc/ayulaundry3.png",
+        desc: "Foto Lokasi Rumah Ayu Laundry 3"
+      },
+      {
+        image: "/public/doc/ayulaundry4.jpg",
+        desc: "Foto Lokasi Rumah Ayu Laundry 4"
+      }
+    ]   
   },
   {
     id: 8,

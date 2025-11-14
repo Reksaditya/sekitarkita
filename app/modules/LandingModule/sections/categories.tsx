@@ -28,7 +28,7 @@ export const CategoriesSection = () => {
       </div>
       <div className="flex flex-col gap-10">
         <h3 className="font-semibold text-3xl">Rekomendasi dari Kami</h3>
-        <div className="grid grid-cols-4 gap-10 flex">
+        <div className="grid grid-cols-4 gap-10">
           {Recomendation.map((item) => {
             return (
               <div

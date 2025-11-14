@@ -1,6 +1,6 @@
 import { ArrowLeftIcon, Cross, Instagram, Star, User } from "lucide-react"
 import { useEffect, useState } from "react";
-import { useNavigate, useParams } from "react-router-dom"
+import { useLocation, useNavigate, useParams } from "react-router-dom"
 import { Badge } from "~/components/ui/badge";
 import { Footer } from "~/components/ui/footer";
 import { productData } from "~/modules/ProductModule/data/productData"
@@ -25,7 +25,7 @@ export default function ImageZoom({ src, alt }: { src: string; alt?: string }) {
       <img
         src={src}
         alt={alt}
-        className="cursor-pointer transition-transform hover:scale-105 rounded-xl"
+        className="cursor-pointer transition-transform hover:scale-105 rounded-xl max-h-56"
         onClick={() => setOpen(true)}
       />
 
@@ -47,6 +47,7 @@ export default function ImageZoom({ src, alt }: { src: string; alt?: string }) {
 
 export const Detail = () => {
   const navigate = useNavigate();
+  const location = useLocation();
   const { id } = useParams()
   const productId = Number(id)
   const product = productData.find((p) => p.id === productId)
@@ -100,7 +101,7 @@ export const Detail = () => {
         <p>{product.desc}</p>
       </div>
       <div className="bg-white shadow-xl rounded-xl w-[1000px] mt-5 p-5 flex flex-col gap-7">
-        <h2 className="font-semibold text-2xl">Contact & Social</h2>
+        <h2 className="font-semibold text-2xl">Kontak & Sosial Media</h2>
         <div className="flex flex-col gap-5">
           <div className="flex">
             <User className="inline-block mr-2" />
@@ -108,7 +109,7 @@ export const Detail = () => {
           </div>
           <div className="flex">
             <Instagram className="inline-block mr-2" />
-            <a href={product.insatgramLink} className="inline-block">{product.instagram ? product.instagram : "Tidak tersedia"}</a>
+            <a href={product.instagramLink} className="inline-block">{product.instagram ? product.instagram : "Tidak tersedia"}</a>
           </div>
         </div>
       </div>
@@ -121,7 +122,10 @@ export const Detail = () => {
                 <img src={item.image} alt={item.name} width={100} className="rounded-lg" />
                 <h3 className="font-medium">{item.name}</h3>
               </div>
-              <h4 className="font-semibold">Rp {item.price.toLocaleString('id-ID')}</h4>
+              <div>
+                <h4 className="font-semibold">{location.pathname === '/4' ? 'Kecil :' : ''} Rp {item.price.toLocaleString('id-ID')}</h4>
+                <h4 className={`font-semibold ${location.pathname === '/4' ? 'flex' : 'hidden'}`}>{location.pathname === '/4' ? 'Besar :' : ''} Rp {item.price2?.toLocaleString('id-ID')}</h4>
+              </div>
             </div>
           )))}
         </div>
