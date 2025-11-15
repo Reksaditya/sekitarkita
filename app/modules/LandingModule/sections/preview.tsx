@@ -19,7 +19,7 @@ const previewItem: preview[] = [
     image: '/public/ayamgeprek.png',
     link: '',
     width: 700,
-    style: "rounded-full w-170 h-170 -right-10 top-0 bg-black/50"
+    style: "rounded-full w-170 h-170 -right-10 top-0 bg-black/50 hidden lg:flex"
   },
   {
     title: 'Cuci Bersih Murah!',
@@ -27,7 +27,7 @@ const previewItem: preview[] = [
     image: '/public/mesincuci.png',
     link: '',
     width: 680,
-    style: "w-150 h-150 top-14 bg-black/20"
+    style: "w-150 h-150 top-14 bg-black/20 hidden lg:flex"
   },
 ]
 
@@ -37,7 +37,7 @@ export const PreviewSection = () => {
   )
 
   return (
-    <section className="px-20 py-10 h-screen flex items-center">
+    <section className="px-5 py-10 md:px-20 md:py-10 h-screen flex items-center">
       <Carousel
         plugins={[plugin.current]}
         onMouseEnter={plugin.current.stop}
@@ -49,18 +49,18 @@ export const PreviewSection = () => {
               <CarouselItem>
                 <div
                   key={index}
-                  className="relative bg-primary rounded-lg flex p-10 h-160"
+                  className="relative bg-primary w-85 lg:w-auto rounded-lg flex p-10 lg:h-160"
                   id="preview"
                 >
                   <div className="text-white flex flex-col max-w-190 justify-between">
                     <div className="flex flex-col gap-5">
-                      <h1 className="font-bold text-9xl">{item.title}</h1>
-                      <h2 className="max-w-130 text-justify ml-3">{item.desc}</h2>
-                    </div>
-                    <Button variant={'secondary'} size={'xl'} className="w-72 text-primary font-semibold">Cek Disini!</Button>
+                      <h1 className="font-bold max-w-60 lg:max-w-0 text-3xl lg:text-9xl z-30">{item.title}</h1>
+                      <h2 className="max-w-60 lg:max-w-130 text-xs lg:text-base text-justify ml-1 lg:ml-3 z-30">{item.desc}</h2>
+                    </div>  
+                    <Button variant={'secondary'} size={'xl'} className="w-72 text-primary font-semibold scale-75 lg:scale-100 mt-3">Cek Disini!</Button>  
                   </div>
                   <div>
-                    <img src={item.image} alt="Ayam Geprek" width={item.width} className="absolute -right-10 -top-5 z-20" />
+                    <img src={item.image} alt="Ayam Geprek" width={item.width} className="absolute -right-25 -top-28 lg:-right-10 lg:-top-5 z-20 scale-50 lg:scale-100" />
                     <div className={`absolute z-10 blur-lg rotate-12 ${item.style}`}>a</div>
                   </div>
                 </div>

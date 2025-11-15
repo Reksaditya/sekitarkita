@@ -9,7 +9,7 @@ import { Contact } from "./sections/contactus"
 
 export const LandingPage = () => {
   return (
-    <div>
+    <div className="overflow-hidden">
       <Navbar />
       <HeroSection />
       <PreviewSection />

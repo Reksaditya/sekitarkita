@@ -7,11 +7,11 @@ export const ProductSection = () => {
   const navigate = useNavigate();
 
   return (
-    <section className="px-20 py-10">
+    <section className="md:px-20 px-5 py-10">
       {/* <div className="flex z-20">
         <h1>Mau Makan Apa Hari Ini?</h1>
       </div> */}
-      <div className="grid grid-cols-4 gap-10">
+      <div className="grid md:grid-cols-4 gap-10">
         {productData.map((item) => {
           return (
             <div

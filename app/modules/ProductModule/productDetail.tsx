@@ -58,88 +58,112 @@ export const Detail = () => {
 
   return (
     <section className="flex flex-col items-center">
-      <div className="bg-white shadow-xl justify-start flex items-center w-full px-5 py-3 mb-5 cursor-pointer">
-        <ArrowLeftIcon onClick={() => {
-          navigate(-1)
-        }} />
+      <div className="bg-white shadow-xl justify-start flex items-center w-full px-4 py-3 mb-5 cursor-pointer">
+        <ArrowLeftIcon onClick={() => navigate(-1)} />
       </div>
-      <div className="bg-white shadow-xl rounded-xl">
-        <div className="rounded-xl overflow-hidden mb-5">
-          <iframe
-            src={product.map}
-            width="1000"
-            height="450"
-            style={{ border: 0 }}
-            allowFullScreen
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
-        <div className="px-5 pb-10">
-          <h1 className="font-semibold text-3xl pb-3">{product.name}</h1>
-          <div className="flex items-center gap-1">
-            {stars.map((star) => (
-              <Star
-                key={star}
-                className={
-                  star <= product.stars
-                    ? "w-5 h-5 fill-yellow-400 text-yellow-400"
-                    : "w-5 h-5 text-gray-300"
-                }
-              />
-            ))}
 
-            <span className="ml-2 text-sm text-gray-600">
-              {product.stars.toFixed(1)}
-            </span>
+      <div className="px-5 md:px-20">
+        <div className="bg-white shadow-xl rounded-xl w-full max-w-[1000px]">
+          <div className="rounded-xl overflow-hidden mb-5 w-full">
+            <iframe
+              src={product.map}
+              className="w-full h-[220px] md:h-[450px]"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+            ></iframe>
           </div>
-          <div className="flex gap-2 pt-5">
-            <Badge>{product.status}</Badge>
-            <h2 className="text-gray-600">{product.operation}</h2>
-          </div>
-        </div>
-        <p>{product.desc}</p>
-      </div>
-      <div className="bg-white shadow-xl rounded-xl w-[1000px] mt-5 p-5 flex flex-col gap-7">
-        <h2 className="font-semibold text-2xl">Kontak & Sosial Media</h2>
-        <div className="flex flex-col gap-5">
-          <div className="flex">
-            <User className="inline-block mr-2" />
-            <a href={product.contactLink} className="inline-block">{product.contact ? product.contact : "Tidak tersedia"}</a>
-          </div>
-          <div className="flex">
-            <Instagram className="inline-block mr-2" />
-            <a href={product.instagramLink} className="inline-block">{product.instagram ? product.instagram : "Tidak tersedia"}</a>
-          </div>
-        </div>
-      </div>
-      <div className="bg-white shadow-xl rounded-xl w-[1000px] mt-5 p-5 flex flex-col gap-7 mb-10">
-        <h2 className="font-semibold text-2xl">Menu</h2>
-        <div>
-          {product.menu?.map((item => (
-            <div key={item.name} className="flex items-center justify-between border-b pb-3 mb-3">
-              <div className="flex items-center gap-5">
-                <img src={item.image} alt={item.name} width={100} className="rounded-lg" />
-                <h3 className="font-medium">{item.name}</h3>
-              </div>
-              <div>
-                <h4 className="font-semibold">{location.pathname === '/4' ? 'Kecil :' : ''} Rp {item.price.toLocaleString('id-ID')}</h4>
-                <h4 className={`font-semibold ${location.pathname === '/4' ? 'flex' : 'hidden'}`}>{location.pathname === '/4' ? 'Besar :' : ''} Rp {item.price2?.toLocaleString('id-ID')}</h4>
-              </div>
+
+          <div className="px-4 md:px-5 pb-10">
+            <h1 className="font-semibold text-2xl md:text-3xl pb-3">{product.name}</h1>
+
+            <div className="flex items-center gap-1">
+              {stars.map((star) => (
+                <Star
+                  key={star}
+                  className={
+                    star <= product.stars
+                      ? "w-5 h-5 fill-yellow-400 text-yellow-400"
+                      : "w-5 h-5 text-gray-300"
+                  }
+                />
+              ))}
+
+              <span className="ml-2 text-sm text-gray-600">{product.stars.toFixed(1)}</span>
             </div>
-          )))}
-        </div>
-      </div>
-      <div className="bg-white shadow-xl rounded-xl w-[1000px] mt-5 p-5 flex flex-col gap-7 mb-10">
-        <h2 className="font-semibold text-2xl">Foto Lokasi</h2>
-        <div className="grid grid-cols-3 gap-5">
-          {product.doc?.map((item, index) => (
-            <div key={index} className="mb-5">
-              <ImageZoom src={item.image} alt={item.desc} />
+
+            <div className="flex flex-wrap gap-2 pt-5">
+              <Badge>{product.status}</Badge>
+              <h2 className="text-gray-600">{product.operation}</h2>
             </div>
-          ))}
+          </div>
+
+          <p className="px-4 pb-5 text-gray-700 leading-relaxed">{product.desc}</p>
+        </div>
+
+        <div className="bg-white shadow-xl rounded-xl w-full max-w-[1000px] mt-5 p-4 md:p-5 flex flex-col gap-7">
+          <h2 className="font-semibold text-xl md:text-2xl">Kontak & Sosial Media</h2>
+
+          <div className="flex flex-col gap-5 text-sm md:text-base">
+            <div className="flex items-center">
+              <User className="inline-block mr-2" />
+              <a href={product.contactLink}>{product.contact || "Tidak tersedia"}</a>
+            </div>
+
+            <div className="flex items-center">
+              <Instagram className="inline-block mr-2" />
+              <a href={product.instagramLink}>{product.instagram || "Tidak tersedia"}</a>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-white shadow-xl rounded-xl w-full max-w-[1000px] mt-5 p-4 md:p-5 flex flex-col gap-7 mb-10">
+          <h2 className="font-semibold text-xl md:text-2xl">Menu</h2>
+
+          <div>
+            {product.menu?.map((item) => (
+              <div
+                key={item.name}
+                className="flex flex-col md:flex-row items-start md:items-center justify-between border-b pb-3 mb-3 gap-3"
+              >
+                <div className="flex items-center gap-3">
+                  <img
+                    src={item.image}
+                    alt={item.name}
+                    className="w-20 h-20 object-cover rounded-lg"
+                  />
+                  <h3 className="font-medium">{item.name}</h3>
+                </div>
+
+                <div className="text-left md:text-right">
+                  <h4 className="font-semibold">
+                    {location.pathname === "/4" ? "Kecil :" : ""} Rp{" "}
+                    {item.price.toLocaleString("id-ID")}
+                  </h4>
+
+                  <h4 className={`${location.pathname === "/4" ? "block" : "hidden"} font-semibold`}>
+                    {location.pathname === "/4" ? "Besar :" : ""} Rp{" "}
+                    {item.price2?.toLocaleString("id-ID")}
+                  </h4>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="bg-white shadow-xl rounded-xl w-full max-w-[1000px] mt-5 p-4 md:p-5 flex flex-col gap-7 mb-10">
+          <h2 className="font-semibold text-xl md:text-2xl">Foto Lokasi</h2>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            {product.doc?.map((item, index) => (
+              <div key={index} className="mb-3">
+                <ImageZoom src={item.image} alt={item.desc} />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
+
       <Footer />
     </section>
   )
