@@ -17,7 +17,7 @@ const previewItem: preview[] = [
   {
     title: 'Makan Enak Murah!',
     desc: 'Makanan bukan sekadar pengisi perut, tapi juga pengikat kebersamaan. Kami percaya, setiap hidangan yang dimasak dengan hati bisa menghadirkan senyum di meja makan.',
-    image: '/public/ayamgeprek.png',
+    image: '/ayamgeprek.png',
     link: '',
     width: 700,
     style: "rounded-full w-170 h-170 -right-10 top-0 bg-black/50 hidden lg:flex"
@@ -25,7 +25,7 @@ const previewItem: preview[] = [
   {
     title: 'Cuci Bersih Murah!',
     desc: 'Pakaian bersih itu bukan sekadar kebutuhan, tapi juga kenyamanan. Disini kami mencuci setiap helai pakaian Anda dengan perhatian, menjaga warna tetap cerah dan kain tetap lembut.',
-    image: '/public/mesincuci.png',
+    image: '/mesincuci.png',
     link: '',
     width: 680,
     style: "w-150 h-150 top-14 bg-black/20 hidden lg:flex"
