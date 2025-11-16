@@ -290,7 +290,7 @@ const productData:products[] = [
     id: 4,
     name: "Warung Roti & Makanan Adhyaksa",
     desc: "",
-    image: "g/adhyaksa.png",
+    image: "/adhyaksa.png",
     operation: "10.00 - 02.00",
     status: "Open",
     map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1111.3366433457431!2d107.63443969818807!3d-6.9675570670161395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e963d118bf0b%3A0x3215f8c661084660!2sWarung%20Nasi%20Kuning%20Adhyaksa!5e0!3m2!1sid!2sid!4v1763050713454!5m2!1sid!2sid",
