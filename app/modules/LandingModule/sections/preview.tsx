@@ -2,6 +2,7 @@ import { useRef } from "react"
 import { Button } from "~/components/ui/button"
 import { Carousel, CarouselContent, CarouselItem } from "~/components/ui/carousel"
 import Autoplay from "embla-carousel-autoplay"
+import { Navigate, useNavigate } from "react-router"
 
 interface preview {
   title: string,
@@ -32,6 +33,7 @@ const previewItem: preview[] = [
 ]
 
 export const PreviewSection = () => {
+  const navigate = useNavigate()
   const plugin = useRef(
     Autoplay({ delay: 2000, stopOnInteraction: true })
   )
@@ -54,10 +56,12 @@ export const PreviewSection = () => {
                 >
                   <div className="text-white flex flex-col max-w-190 justify-between">
                     <div className="flex flex-col gap-5">
-                      <h1 className="font-bold max-w-60 lg:max-w-0 text-3xl lg:text-9xl z-30">{item.title}</h1>
+                      <h1 className="font-bold max-w-60 lg:max-w-200 text-3xl lg:text-9xl z-30">{item.title}</h1>
                       <h2 className="max-w-60 lg:max-w-130 text-xs lg:text-base text-justify ml-1 lg:ml-3 z-30">{item.desc}</h2>
                     </div>  
-                    <Button variant={'secondary'} size={'xl'} className="w-72 text-primary font-semibold scale-75 lg:scale-100 mt-3">Cek Disini!</Button>  
+                    <Button variant={'black'} size={'xl'} className="w-72 font-semibold scale-75 lg:scale-100 mt-3" onClick={() => {
+                      navigate('/product')
+                    }}>Cek Disini!</Button>  
                   </div>
                   <div>
                     <img src={item.image} alt="Ayam Geprek" width={item.width} className="absolute -right-25 -top-28 lg:-right-10 lg:-top-5 z-20 scale-50 lg:scale-100" />

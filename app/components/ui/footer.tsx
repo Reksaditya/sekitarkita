@@ -3,8 +3,8 @@ import { Button } from "./button"
 
 export const Footer = () => {
   return (
-    <footer className="bg-primary text-white border-t-10 border-secondary w-full">
-      <div className="flex flex-col md:flex-row items-center md:justify-between px-5 py-5 md:px-20 pt-10">
+    <footer className="bg-primary text-white shadow-lg w-full">
+      <div className="flex flex-col md:flex-row items-center md:items-start md:justify-between px-5 py-5 md:px-20 pt-10">
         <div className="flex flex-col gap-10">
           <div className="flex flex-col gap-5">
             <img src="/public/logo.svg" alt="logo" width={200} className="scale-50 md:scale-100" />
@@ -18,8 +18,8 @@ export const Footer = () => {
           </div>
           <Button></Button>
         </div>
-        <div className="flex gap-20">
-          <div className="flex flex-col gap-7">
+        <div className="flex gap-20 h-full">
+          <div className="flex flex-col gap-7 h-full">
             <h4 className="font-bold">Site Map</h4>
             <ul className="flex flex-col gap-2">
               <li>Beranda</li>
@@ -36,7 +36,7 @@ export const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="bg-secondary text-primary font-semibold py-3 px-5 md:px-20">
+      <div className="font-semibold py-3 px-5 md:px-20">
         <h2 className="text-sm md:text-base">Copyright &copy; 2025. Sekitar Kita. All Rights Reserved.</h2>
       </div>
     </footer>

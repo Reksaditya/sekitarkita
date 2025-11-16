@@ -63,7 +63,7 @@ export const Detail = () => {
       </div>
 
       <div className="px-5 md:px-20">
-        <div className="bg-white shadow-xl rounded-xl w-full max-w-[1000px]">
+        <div className="bg-white shadow-xl rounded-xl w-[1000px]">
           <div className="rounded-xl overflow-hidden mb-5 w-full">
             <iframe
               src={product.map}
@@ -71,6 +71,7 @@ export const Detail = () => {
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
 

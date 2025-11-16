@@ -491,7 +491,7 @@ const productData:products[] = [
     image: "/public/jus.png",
     operation: "06.30 - 21.00",
     status: "Open",
-    map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.290464925151!2d107.63023797524725!3d-6.975016368300215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e9ae22c0f675%3A0x9f9e04069ef99df4!2sTerserah!5e0!3m2!1sid!2sid!4v1763049045503!5m2!1sid!2sid",
+    map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2230.7265404034565!2d107.631604350008!3d-6.971640765569201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e9b276a51d37%3A0xeb53144adb977dac!2sGondang%20Roso!5e0!3m2!1sid!2sid!4v1763259439407!5m2!1sid!2sid",
     stars: 5,
   },
   {
@@ -501,7 +501,7 @@ const productData:products[] = [
     image: "/public/ketoprak.png",
     operation: "06.30 - 21.00",
     status: "Open",
-    map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.290464925151!2d107.63023797524725!3d-6.975016368300215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e9ae22c0f675%3A0x9f9e04069ef99df4!2sTerserah!5e0!3m2!1sid!2sid!4v1763049045503!5m2!1sid!2sid",
+    map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2230.7265404034565!2d107.631604350008!3d-6.971640765569201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e9b276a51d37%3A0xeb53144adb977dac!2sGondang%20Roso!5e0!3m2!1sid!2sid!4v1763259439407!5m2!1sid!2sid",
     stars: 5,
   },
   {
@@ -511,7 +511,7 @@ const productData:products[] = [
     image: "/public/basosolo.png",
     operation: "06.30 - 21.00",
     status: "Open",
-    map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.290464925151!2d107.63023797524725!3d-6.975016368300215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e9ae22c0f675%3A0x9f9e04069ef99df4!2sTerserah!5e0!3m2!1sid!2sid!4v1763049045503!5m2!1sid!2sid",
+    map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2230.7265404034565!2d107.631604350008!3d-6.971640765569201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e9b276a51d37%3A0xeb53144adb977dac!2sGondang%20Roso!5e0!3m2!1sid!2sid!4v1763259439407!5m2!1sid!2sid",
     stars: 5,
   },
 ]
