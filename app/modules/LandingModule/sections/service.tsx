@@ -37,7 +37,7 @@ export const ServiceSection = () => {
               key={index}
               className="md:w-96 md:h-96 w-80 h-80 flex flex-col items-center justify-center bg-white shadow-2xl rounded-3xl gap-5 text-center p-10 border cursor-pointer hover:scale-105 duration-500"
             >
-              <img src={`/public/${item.image}.png`} alt={item.image} />
+              <img src={`/${item.image}.png`} alt={item.image} />
               <h2 className="font-semibold">{item.title}</h2>
               <p className="">{item.desc}</p>
             </div>
