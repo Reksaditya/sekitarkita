@@ -13,14 +13,14 @@ export const CategoriesSection = () => {
       <div className="flex flex-col md:flex-row gap-5">
         <div className="rounded-lg relative overflow-hidden md:h-75 cursor-pointer hover:scale-105 transition duration-500">
           <div className="absolute inset-0 bg-black/50 z-20 hover:bg-primary/70 transition duration-500"></div>
-          <img src="/public/laundry.png" alt="laundry" className="object-cover object-center" width={700} />
+          <img src="/laundry.png" alt="laundry" className="object-cover object-center" width={700} />
           <div className="font-semibold overflow-hidden h-full w-full top-55 md:top-60 inset-0 absolute">
             <h3 className="absolute z-30 inset-0 text-white bg-primary w-fit h-fit px-5 py-2 rounded-lg text-sm md:text-lg left-1/2 -translate-x-1/2">Laundry</h3>
           </div>
         </div>
         <div className="rounded-lg relative overflow-hidden md:h-75 cursor-pointer hover:scale-105 transition duration-500">
           <div className="absolute inset-0 bg-black/50 z-20 hover:bg-primary/70 transition duration-500"></div>
-          <img src="/public/makanan.png" alt="makanan" className="object-cover object-center" width={700} />
+          <img src="/makanan.png" alt="makanan" className="object-cover object-center" width={700} />
           <div className="font-semibold overflow-hidden h-full w-full top-55 md:top-60 inset-0 absolute">
             <h3 className="absolute z-30 inset-0 text-white bg-primary w-fit h-fit px-5 py-2 rounded-lg text-sm md:text-lg left-1/2 -translate-x-1/2">Makanan</h3>
           </div>

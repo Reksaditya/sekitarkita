@@ -41,7 +41,7 @@ export const Navbar = () => {
       : "relative bg-white shadow-md z-30"
       }`}>
       <img
-        src={`/public/${isLight ? "logodark.svg" : "logo.svg"}`}
+        src={`/${isLight ? "logodark.svg" : "logo.svg"}`}
         alt="logo"
         width={150}
         height={150}
